@@ -12,4 +12,4 @@ API_client is an app that generates access tickets to a system. This app will be
 ### Instructions
 
 1. Run npm install
-2. Visit locallhose:3000.
+2. Visit locallhost:3000.
