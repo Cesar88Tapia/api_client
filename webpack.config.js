@@ -17,11 +17,9 @@ module.exports = {
         ],
         exclude: /node_modules|packages/,
       },
-      {
-        resolve: {
-          extentions: ['.js', '.jsx']
-        }
-      }
-    ]
+    ],
   }
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
 };
