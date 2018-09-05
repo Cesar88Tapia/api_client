@@ -18,13 +18,6 @@ module.exports = {
         exclude: /node_modules|packages/,
       },
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: [
-          'eslint-loader'
-        ]
-      },
-      {
         resolve: {
           extentions: ['.js', '.jsx']
         }
