@@ -11,7 +11,7 @@ use register;
     password varchar(50) NOT NULL
   );
 
-  INSERT INTO(id, user_name, password) VALUES(1, 'carl123', 'Room49'),
-  INSERT INTO(id, user_name, password) VALUES(2, 'sam321', 'Soul15saver'),
-  INSERT INTO(id, user_name, password) VALUES(3, 'joe234', 'Trench805'),
-  INSERT INTO(id, user_name, password) VALUES(4, 'ron789', 'Crust7y'),
+  INSERT INTO(user_name, password) VALUES('carl123', 'Room49'),
+  INSERT INTO(user_name, password) VALUES('sam321', 'Soul15saver'),
+  INSERT INTO(user_name, password) VALUES('joe234', 'Trench805'),
+  INSERT INTO(user_name, password) VALUES('ron789', 'Crust7y'),
