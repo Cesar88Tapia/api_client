@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 
 //Get request
-app.get('/results', route.getUser);
+app.get('/user', route.getUser);
 
 
 //Post request
