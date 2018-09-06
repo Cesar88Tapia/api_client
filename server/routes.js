@@ -4,7 +4,7 @@ const path = require('path');
 
 
 
-export.getUsers = (req, res) => {
+exports.getUser = (req, res) => {
 
   db.getUser()
     .then(data => {
@@ -13,7 +13,7 @@ export.getUsers = (req, res) => {
     .catch(err => {console.log(err)})
 }
 
-export.postUsers = (req, res) => {
+exports.postUsers = (req, res) => {
   let userName = req.body.userName;
   let password = req.body.password;
   db.postUser(userName, password)
