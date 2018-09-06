@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    './client/src/Index.js'
+    './client/src/index.js'
   ],
   output: {
     filename: 'bundle.js',
@@ -19,7 +19,7 @@ module.exports = {
       },
     ],
   }
-  resolve: {
+  /*resolve: {
     extensions: ['.js', '.jsx']
-  },
+  },*/
 };
