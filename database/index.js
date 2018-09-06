@@ -3,9 +3,9 @@ const mysqlConfig = require('./config.js');
 const connection = mysql.createConnection(mysqlConfig);
 
 
-const getUser = function() {
+const getUsers = function() {
   return new Promise((resolve, reject) =>{
-    connection.query('SELECT * FROM user', (err, data) => {
+    connection.query('SELECT * FROM users', (err, data) => {
       if(err){
         return reject(err);
       }
@@ -15,9 +15,9 @@ const getUser = function() {
 };
 
 
-const postUser = function(user_name, password) {
+const postUsers = function(user_name, password) {
   return new Promise((resolve, reject) => {
-    connection.query('INSERT INTO user(user_name, password) VALUES(?, ?)'),
+    connection.query('INSERT INTO users(user_name, password) VALUES(?, ?)'),
       [userName, password], (err, data) => {
         if(err) {
           return reject(err);
@@ -28,6 +28,6 @@ const postUser = function(user_name, password) {
 };
 
 module.exports = {
-  getUser,
-  postUser
+  getUsers,
+  postUsers
 };
