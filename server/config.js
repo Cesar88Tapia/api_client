@@ -10,11 +10,11 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 
 //Get request
-app.get('/user', route.getUser);
+app.get('/user', route.getUsers);
 
 
 //Post request
-app.post('/user', route.postUser);
+app.post('/user', route.postUsers);
 
 
 module.exports = app;
