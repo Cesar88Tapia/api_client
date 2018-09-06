@@ -4,7 +4,7 @@
   "description": "API_client is an app that generates access tickets to a system. This app will be able to register a user and will validate the user's password, the app will also generate an alpha-numeric password for the user.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -d --watch",
+    "react-dev": "webpack -d --watch",
     "start-dev": "nodemon server/index.js"
   },
   "repository": {
