@@ -1,5 +1,5 @@
 import React from 'react';
-import React, { render } from 'react-dom';
+import ReactDom from 'react-dom';
 
 class Register extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Register extends React.Component {
       password: e.target.value
     })
   }
-  addNewUser() {
+  add() {
     this.props.postUsers(this.state.userName, this.state.password);
 
     this.setState({
@@ -31,10 +31,14 @@ class Register extends React.Component {
   }
 
   render (){
-    return(
-      <div>
-        <h1 className='registro'> registrate </h1>
+    return(<div>
+        userName: <input onChange={this.updateUserName} value={this.state.userName}></input>
+        <br />
+        password: <input onChange={this.updatePassword} value={this.state.password}></input>
+        <button onClick={this.add}>Add New User</button>
       </div>
     )
   }
 }
+
+export default Register;
