@@ -9,12 +9,12 @@ class App extends React.Component {
     this.state = {
       list: []
     }
-    this.addRegister = this.addRegister.bind(this);
-    this.getRegister = this.getRegister.bind(this);
+    this.addUsers = this.addRegister.bind(this);
+    this.getUsers = this.getUsers.bind(this);
   }
 
-  getRegister() {
-    axios.get('/Register')
+  getUsers() {
+    axios.get('/users')
     .then((results) => {
       this.setState({list: results.data});
     })
@@ -24,17 +24,17 @@ class App extends React.Component {
   }
 
   addRegister(userName, password) {
-    axios.post('/Register', {
+    axios.post('/users', {
       userName: userName,
       password: password
     })
     .then(() => {
-      this.getRegister();
+      this.getUsers();
     })
   }
 
   componentDidMount() {
-    this.getRegister();
+    this.getUsers();
   }
 
   render() {
